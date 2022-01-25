@@ -1,0 +1,544 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+header{
+	padding: 2% 0;
+}
+.clear{
+	clear: both;
+}
+.logo{
+	padding: 1%;
+}
+.logo>img{
+	float: left;
+}
+.desktop{;
+	float: right;
+	padding: 0.5%;
+}
+.desktop>ul{
+	list-style-type: none;
+}
+.desktop>ul>li{
+	margin: 0 20px;
+	float: left;
+}
+.desktop>ul>li>a{
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+.mobile{
+	display: none;
+	background-image: url(menu.png);
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-size: 100% 100%;
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.mobile>ul{
+	z-index: 999;
+	display: none;
+	position: absolute;
+	background-color: white;
+	list-style-type: none;
+	top:110px;
+	width: 100%;
+	left: 0;
+}
+.mobile>ul>li{
+	text-align: center;
+	width: 100%;
+	padding: 8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+	float: left;
+}
+.mobile>ul>li:hover{
+	background-color: rgb(230,230,230);
+}
+.mobile>ul>li>a{
+	color: red;
+	font-size: 18px;
+	text-decoration: none;
+}
+/**/
+.sessao1{
+	width: 100%;
+	height: 80%;
+	background-image: url(fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.infos{
+	float: left;
+	padding: 8% 12%;
+}
+.vermelho{
+	background-image: url(vermelho.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 350px;
+	height: 60px;
+	position: relative;
+	left: 23px;
+	margin: 10px 0;
+	padding:2%;
+}
+.vermelho:nth-of-type(2){
+	background-image: url(vermelho.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 325px;
+	height: 60px;
+	position: relative;
+	left: 6px;
+	margin: 10px 0;
+	padding:2%;
+}
+.vermelho:nth-of-type(3){
+	background-image: url(vermelho.png);
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 60px;
+	position: relative;
+	left: -10px;
+	margin: 10px 0;
+	padding:2%;
+}
+.vermelho>span{
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	color: white;
+	padding: 0 3%;
+	font-style: italic;
+}
+.branco{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width:470px;
+	height: 50px;
+	position: relative;
+	left: -27px;
+	padding:2%;
+	background-image: url(branco.png);
+}
+.branco>span{
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 0 3%;
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+
+
+.sessao2{
+	padding: 5%;
+	height: 80%;
+}
+.titulo{
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.linha{
+	width: 100%;
+	background-color: black;
+	height: 3px;
+	top: 15px;
+	position: absolute;
+}
+.titulo>h2{
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	font-style: italic;
+	padding: 0 20px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.carros{
+	width: 100%;
+	height: 100%;
+}
+.carroindividual{
+	padding-top: 20px;
+	width: calc(100% / 3);
+	float: left;
+}
+.fotocarro{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 50%;
+	border:5px solid white;
+	background-image: url(carro.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.carroindividual>h2{
+	margin-top: 10px;
+	font-size: 14px;
+	color:black;
+	font-style: italic;
+	text-align: center;
+}
+.carroindividual>p{
+	font-size: 14px;
+	color:black;
+	font-style: italic;
+	text-align: center;
+}
+.detalhe{
+	margin: 5px auto;
+	width: 200px;
+	height: 50px;
+	background-color: red;
+	text-align: center;
+	padding-top: 13px;
+	cursor: pointer;
+}
+.detalhe>a{
+	font-size: 14px;
+	color:white;
+	text-decoration: none;
+}
+
+/**/
+.sessao3{
+	height: 80%;
+}
+.depoimento{
+	display: inline-block;
+	float: left;
+	padding:6%;
+	height: 90%;
+	background-color: black;
+	width: 50%;
+}
+.caixa{
+	margin: 0 auto;
+}
+.caixa>h3{
+	margin-top: 10px;
+	font-size: 32px;
+	color:white;
+	text-align: left;
+	padding-left: 25px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.caixa>ul{
+	padding-left: 40px;
+}
+.caixa>ul>li{
+	font-size:18px;
+	color:white;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+.box{
+	float: right;
+	width: 150px;
+	top: -60px;
+	height: 50px;
+	position: relative;
+	border: 1px solid white;
+	background-color: red;
+	text-align: center;
+}
+.box>a{
+	margin: 8px 0;
+	display: inline-block;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.depoimento2{
+	display: inline-block;
+	float: left;
+	padding:6%;
+	height: 90%;
+	background-color: red;
+	width: 50%;
+}
+.depoimento2>h3{
+	margin-top: 10px;
+	font-size: 32px;
+	color:white;
+	padding-left: 6%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.depoimento2>p{
+	margin-top: 10px;
+	font-size: 18px;
+	padding-left: 6%;
+	color:white;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.depoimento2>.p1{
+	float: right;
+	font-size: 14px;
+	color:black;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+}
+.left{
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-image: url(left.png);
+	background-size: 100% 100%;
+	position: relative;
+	left: 30px;
+}
+.right{
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	top: -32px;
+	left:70px;
+	background-image: url(right.png);
+	background-size: 100% 100%;
+}
+
+/**/
+
+.sessao4{
+	padding: 20px 5%;
+}
+.titulo1{
+	max-width: 1400px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+.linha1{
+	background-color: black;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	top: 15px;
+}
+.titulo1>h2{
+	font-size: 23px;
+	text-transform: uppercase;
+	font-style: italic;
+	background-color: white;
+	padding: 0 20px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+
+.formulario>form{
+	margin: 15px 0;
+	padding-top: 35px;
+	text-align: center;
+}
+.formulario>form>input{
+	width: 500px;
+	margin: 10px;
+	height: 40px;
+	border-radius: 7px;
+	font-size: 15px;
+	padding: 2%;
+	border: 2px solid #b5b4b1;
+}
+.inputs>input{
+	border: 2px solid #b5b4b1;
+	width: 239px;
+	margin: 10px;
+	height: 40px;
+	border-radius: 7px;
+	font-size: 15px;
+	padding: 2%;
+}
+.formulario>form>textarea{
+	width: 500px;
+	font-size: 15px;
+	border: 2px solid #b5b4b1;
+	height: 300px;
+	padding: 1%;
+	border-radius: 7px;
+	resize: none;
+}
+.enviar{
+	width: 240px;
+	margin: 20px;
+	height: 60px;
+	padding-bottom: 2%;
+	padding-top: 8px;
+	cursor: pointer;
+	border-radius: 7px;
+	background-color: red;
+	font-size: 25px;
+	color:white;
+}
+
+footer{
+	background-color: #262c36;
+	height: 20%;
+}
+.rodape{
+	float: left;
+	padding: 3% 2%;
+}
+.rodape>ul{
+	list-style-type: none;
+}
+.rodape>ul>li{
+	float: left;
+	margin: 0 10px;
+}
+.rodape>ul>li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+}
+.copy{
+	float: right;
+	padding: 3% 2%;
+}
+.copy>h2{
+	font-size: 22px;
+	color: white;
+}
+/******/
+
+@media screen and (max-width: 1100px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.infos{
+		height: auto;
+		float: none;
+	}
+	.vermelho{
+		margin-top: 60px;
+		width: 70%;
+	}
+	.vermelho:nth-of-type(2){
+		width: 60%;
+	}
+	.vermelho:nth-of-type(3){
+		width: 50%;
+	}
+	.branco{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.sessao2{
+		height: auto;
+	}
+	.branco{
+		width: 75%;
+	}
+	.branco>span{
+		width: 40%;
+		font-size: 16px;
+	}
+	.carroindividual{
+		width: 100%;
+		float: none;
+	}
+	.sessao3{
+		height: auto;
+	}
+	.depoimento{
+		float: none;
+		width: 100%;
+	}
+	.caixa>h3{
+		margin-left: -10px;
+		text-align: center;
+	}
+	.caixa>ul{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.box{
+		float: none;
+		margin: 0 auto;
+		top: 0;
+		margin-top: 30px;
+		width: 50%;
+	}
+	.depoimento2{
+		float: none;
+		width: 100%;
+	}
+	.depoimento2>h3{
+		text-align: center;
+	}
+	.formulario>form>input{
+		width: 90%;
+	}
+	.inputs>input{
+		width: 90%;
+	}
+	.formulario>form>textarea{
+		width: 90%;
+		margin-top: 10px;
+	}
+	.enviar{
+		width: 80%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.caixa>h3{
+		margin-top: -20px;
+	}
+	.caixa>ul{
+		margin-top: -10px;
+	}
+	.box{
+		width: 40%;
+		height: auto;
+		top: 0;
+		float: none;
+		margin: 30px auto;
+	}
+}
+
+@media screen and (max-width: 970px){
+	.rodape{
+		display: none;
+	}
+	.copy{
+		padding-top: 40px;
+		float: none;
+		text-align: center;
+	}
+}

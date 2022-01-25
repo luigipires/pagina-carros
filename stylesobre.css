@@ -1,0 +1,222 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+header{
+	padding: 2% 0;
+	border-bottom: 4px solid red;
+}
+.clear{
+	clear: both;
+}
+.logo{
+	padding: 1%;
+}
+.logo>img{
+	float: left;
+}
+.desktop{;
+	float: right;
+	padding: 0.5%;
+}
+.desktop>ul{
+	list-style-type: none;
+}
+.desktop>ul>li{
+	margin: 0 20px;
+	float: left;
+}
+.desktop>ul>li>a{
+	font-size: 25px;
+	color: black;
+	text-decoration: none;
+}
+.mobile{
+	display: none;
+	background-image: url(menu.png);
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-size: 100% 100%;
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+.mobile>ul{
+	z-index: 999;
+	display: none;
+	position: absolute;
+	background-color: white;
+	list-style-type: none;
+	top:110px;
+	width: 100%;
+	left: 0;
+}
+.mobile>ul>li{
+	text-align: center;
+	width: 100%;
+	padding: 8px 0;
+	transition: 0.4s;
+	border-bottom: 1px solid black;
+	float: left;
+}
+.mobile>ul>li:hover{
+	background-color: rgb(230,230,230);
+}
+.mobile>ul>li>a{
+	color: red;
+	font-size: 18px;
+	text-decoration: none;
+}
+/**/
+.sessao{
+	padding: 5%;
+}
+.titulo{
+	max-width: 1400px;
+	margin: 30px auto;
+	padding-bottom: 30px;
+	text-align: center;
+	position: relative;
+}
+.linha{
+	width: 100%;
+	background-color: black;
+	height: 3px;
+	top: 24px;
+	position: absolute;
+}
+.titulo>h2{
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	font-style: italic;
+	padding: 0 20px;
+	font-size: 34px;
+	text-transform: uppercase;
+}
+.foto{
+	width: 70%;
+	height: 550px;
+	background-image: url(rubinho.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.texto{
+	padding: 2%;
+	width: 75%;
+	margin: 0 auto;
+}
+.texto>h2{
+	text-align: left;
+	font-style: italic;
+	padding-bottom: 10px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.texto>p{
+	font-size: 17px;
+	font-style: italic;
+}
+.div2{
+	width: 75%;
+	margin: 0 auto;
+	padding: 2%;
+}
+.foto2{
+	float: left;
+	width: 30%;
+	height: 200px;
+	background-image: url(rubinho2.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+}
+.texto1{
+	float: left;
+	width: 70%;
+	padding: 2%;
+}
+.texto1>p{
+	font-size: 17px;
+	font-style: italic;
+}
+/**/
+footer{
+	background-color: #262c36;
+	height: 20%;
+	border-top: 5px solid red;
+}
+.rodape{
+	float: left;
+	padding: 3% 2%;
+}
+.rodape>ul{
+	list-style-type: none;
+}
+.rodape>ul>li{
+	float: left;
+	margin: 0 10px;
+}
+.rodape>ul>li>a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-style: italic;
+}
+.copy{
+	float: right;
+	padding: 3% 2%;
+}
+.copy>h2{
+	font-size: 22px;
+	color: white;
+}
+/****/
+
+@media screen and (max-width: 1100px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 970px){
+	.rodape{
+		display: none;
+	}
+	.copy{
+		padding-top: 40px;
+		float: none;
+		text-align: center;
+	}
+	.texto>h2{
+		text-align: center;
+	}
+	.div2{
+		margin-top: 20px;
+	}
+	.foto2{
+		float: none;
+		width: 70%;
+		margin: 0 auto;
+	}
+	.texto1{
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 666px){
+	.foto{
+		width: 84%;
+	}
+}
